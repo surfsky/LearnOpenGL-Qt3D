@@ -1,0 +1,33 @@
+/简化代码，增加可读性
+/下载图片和模型资源（原项目中要联网下，基本下载不下来）
+/直接引用virtualkey资源
+/直接引用assets 资源
+/废除目录 shared，将assets和shaders目录提到根目录。
+
+
+
+
+-----------------------------------------------
+old
+-----------------------------------------------
+!contains(CONFIG, no_app) {
+        RESOURCES += app.qrc
+} else {
+        DEFINES += NO_APP_QRC
+        message(app.qrc not included.)
+}
+
+unix:!contains(CONFIG, no_assets) {
+        include(assets.pri)
+} else {
+        DEFINES += NO_ASSETS_QRC
+        message(assets.qrc not included.)
+}
+
+# Additional import path used to resolve QML modules in Qt Creator's code model
+QML_IMPORT_PATH = $$PWD/qml-virtualkey
+include(qmlvirtualkey/qmlvirtualkey.pri)
+
+# Do not distribute with assets
+#CONFIG += no_assets
+#CONFIG += no_app
