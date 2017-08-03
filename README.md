@@ -1,5 +1,22 @@
-learnopengl-qt3d
+LearnOpenGL-Qt3D
 ================
+
+［相关资源］
+
+- https://learnopengl.com/                          : OpenGL3.3教材，含很多理论知识，用c++写的。
+- https://github.com/LearnOpenGL-CN/LearnOpenGL-CN  : 中文翻译
+- https://github.com/MidoriYakumo/learnopengl-qt3d  : 用QtQml3D实现的例子，未完成。
+- https://github.com/jjzhang166/learnopengl-qt3d    : fork的，多了些例子。
+
+［注意］
+
+- 本项目fork自：https://github.com/MidoriYakumo/learnopengl-qt3d
+- 本项目尚未完成。Qt3D仍未完善，有很多例程用Qt3D 善写不出来。
+- 里面有很多的Qt3D Shader可供学习。
+- 原git中需要另行下载的资源在本git中已经下载，可直接用 QmlScene 运行。
+
+
+[以下为原始说明，有空改掉]
 
 Qt3D version of [LearnOpenGL](http://learnopengl.com/) examples, currently works with Qt5.8. I created this repo aiming to understand how Qt3D works.
 
@@ -65,3 +82,5 @@ Content
 2.	[Basic Lighting](doc/Basic-Lighting.md) : works
 3.	[Materials](doc/Materials.md) : works
 4.	[Lighting-maps](doc/Lighting-maps.md) : works
+
+
